@@ -1,0 +1,78 @@
+git init   -- Intialize your repository with Git and Git starts tracking changes in your files 
+git add [file name]  -- Add a file (changes from your working directory to a staging area)
+git commit -m "any message"  -- Commit a file to commit history  
+git remote add [remote repository name] [remote url address]  -- Connect your local repository to a remote repository
+---------------
+
+
+
+ffffffff
+
+git —version
+git config --global init.defaultBranch <name>
+
+
+git config —global user.name “subhrapattnaik”
+
+git config —global user.email “subhra.pattnaik@gmail.com”
+
+git remote add <remote_name> <remote_github_url>
+git push -u <remote_name>
+------------------------------------------
+git remote add <remote repository name> <remote url>
+
+git push -u <remote repository name>
+
+
+(the remote repository should be empty..try without readme)
+----------------------------------------
+git push  -- Push the current local repository to remote
+git clone [url]  -- Clone the remote repository into a local repository  
+mkdir [folder name] -- Creates a new directory
+git status -- After doing the changes this command shows the file names which are modified
+______________________________________________________________________________________________________________________________
+
+Git divides our work into 3 stages
+
+1.Working Directory (Where we are creating and making changes to our file)
+
+We do (git add file name)
+
+2.Staging Area (When the files are ready to be commited)
+
+We do (git commit -m "any message")
+ 
+3.Local Git Repository (After the files are comitted, they become part of commit history in a local repository)
+
+We do (git push)
+
+4. There is a remote repository where we can push all our work
+
+(git pull) is used to get the file from remote repository to local repository
+
+____________________________________________________________________________________________________________________________________
+
+git diff --staged (shows the difference between the working directory and the previous commits)
+git log (shows all your commits with the commit no.)
+git checkout [commit id] -- (commit ID is the first 5 character of the ID)
+git branch -- shows all the branches in your local repository
+git checkout [branch name] -- (to switch to a particular branch) 
+git branch [branch name] -- (to create a new branch)
+git diff [branchA] [branchB] -- (to see the differences between the branches)
+ 
+git remote add origin [http...git] -- (empty repository URL)
+git push origin master 
+
+
+git —version
+
+
+git config —global user.name “subhrapattnaik”
+
+git config —global user.email “subhra.pattnaik@gmail.com”
+
+git remote add <remote_name> <remote_github_url>
+git push -u <remote_name>
+______________________________________________________________________________________________
+
+By default the branch is master 

@@ -1,0 +1,461 @@
+ 
+USER@DELL MINGW64 ~
+$ cd ..
+
+USER@DELL MINGW64 /c/Users
+$ cd ..
+
+USER@DELL MINGW64 /c
+$ cd ..
+
+USER@DELL MINGW64 /
+$ ls
+bin/  etc/           LICENSE.txt  ReleaseNotes.html  unins000.exe*
+cmd/  git-bash.exe*  mingw64/     tmp/               unins000.msg
+dev/  git-cmd.exe*   proc/        unins000.dat       usr/
+
+USER@DELL MINGW64 /
+$ cd c:
+
+USER@DELL MINGW64 /c
+$ ls
+'$Recycle.Bin'/             ProgramData/
+ bootmgr                    SubhraWhitehatjr/
+ BOOTNXT                    swapfile.sys
+'Documents and Settings'@  'System Volume Information'/
+ hiberfil.sys               TwoStudentClasses/
+ Intel/                     Users/
+ localsetup/                WhiteHat101/
+ MSOCache/                  WhiteHatJr2ndModule/
+ OldFilesAndDocuments/      WhitehatJrClassActivity/
+ pagefile.sys               WhitehatJrProjectsPractice/
+ PerfLogs/                  Whitehat-V2-Curriculum/
+'Program Files'/            Windows/
+'Program Files (x86)'/
+
+USER@DELL MINGW64 /c
+$ cd  WhiteHatJr2ndModule
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule
+$ ls
+'New folder'/            PRO-C55/   PRO-C64/   PRO-C73/   PRO-C82/   PRO-C91/
+ node-v14.15.0-x64.msi   PRO-C56/   PRO-C65/   PRO-C74/   PRO-C83/   PRO-C92/
+ PRO-C100/               PRO-C57/   PRO-C66/   PRO-C75/   PRO-C84/   PRO-C93/
+ PRO-C49/                PRO-C58/   PRO-C67/   PRO-C76/   PRO-C85/   PRO-C94/
+ PRO-C50/                PRO-C59/   PRO-C68/   PRO-C77/   PRO-C86/   PRO-C95/
+ PRO-C51/                PRO-C60/   PRO-C69/   PRO-C78/   PRO-C87/   PRO-C96/
+ PRO-C52/                PRO-C61/   PRO-C70/   PRO-C79/   PRO-C88/   PRO-C97/
+ PRO-C53/                PRO-C62/   PRO-C71/   PRO-C80/   PRO-C89/   PRO-C98/
+ PRO-C54/                PRO-C63/   PRO-C72/   PRO-C81/   PRO-C90/   PRO-C99/
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule
+$ cd  PRO-C67
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67
+$ ls
+PRO-C67-ClassSummary.pdf  PRO-C67-CurriculumDocument.pdf
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67
+$ mkdir myStory
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67
+$ cd myStory
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory
+$ git init
+Initialized empty Git repository in C:/WhiteHatJr2ndModule/PRO-C67/myStory/.git/
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Characters.txt
+        Story.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (master)
+$ git add Characters.txt Story.txt
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (master)
+$ git commit -m "Added Characters.txt and Story.txt for the story"
+[master (root-commit) 8b11dce] Added Characters.txt and Story.txt for the story
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Characters.txt
+ create mode 100644 Story.txt
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Story.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (master)
+$ git add  Story.txt
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (master)
+$ git diff --staged
+diff --git a/Story.txt b/Story.txt
+index e69de29..22a3f8d 100644
+--- a/Story.txt
++++ b/Story.txt
+@@ -0,0 +1,3 @@
++Once there lived a monkey in a jamun tree by a river. The monkey was alone <96> he had no friends, no family, but he was happy and content. The jamun tree gave him plenty of sweet fruit to eat, and shade from the sun and shelter from the rain.
++
++One day a crocodile came swimming up the river and climbed on to the bank to rest under the monkey<92>s tree. <91>Hello,<92> called the monkey, who was a friendly animal. <91>Hello,<92> replied the crocodile, surprised. <91>Do you know where I can get some food?<92> he asked. <91>I haven<92>t had anything to eat all day.
+\ No newline at end of file
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (master)
+$ git diff
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (master)
+$ git commit -m "Added the story"
+[master 535fedb] Added the story
+ 1 file changed, 3 insertions(+)
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (master)
+$ git log
+commit 535fedbde3ccf0fb79b0e0ba9aee9f1214dbf834 (HEAD -> master)
+Author: subhrapattnaik <subhra.pattnaik@gmail.com>
+Date:   Tue Dec 1 00:31:15 2020 +0530
+
+    Added the story
+
+commit 8b11dcea4d2e63b7d66b5b3b45014063c03db805
+Author: subhrapattnaik <subhra.pattnaik@gmail.com>
+Date:   Tue Dec 1 00:03:09 2020 +0530
+
+    Added Characters.txt and Story.txt for the story
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (master)
+$
+
+------------------------------------------------------
+
+Let's say you don't like the current story plot which you have written and want to
+move back to the older commit.
+ You can see all your commits using the git log command.
+You can also see the time of the commit, the author and the commit message.
+ There is also a commit id given to each commit. You can use the id or even the
+first 5 characters of the id to move back to that commit using git checkout
+<commit id>-----------
+
+-----------------------------------------------------
+
+$ git checkout  8b11d
+Note: switching to '8b11d'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 8b11dce Added Characters.txt and Story.txt for the story
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory ((8b11dce...))
+$
+--------------------------------------------------------------------
+
+You can open the Story file and see that it contains the text you had written in
+your first commit!
+ This way you can move around to any commit history you have made.
+ If you are properly committing your work for every story line (or every feature
+while writing code), you can fearlessly experiment with your work without
+having the fear of losing your work.
+
+-------------------------------------------------------------
+To explore another plot in your story or add new characters, create a new branch
+here.
+Your current branch was called 'master' by default.
+We all know this story where the monkey is the hero and crocodile's wife is
+the villain. Let's flip the story in our new branch. Let's make the crocodile's
+wife a hero and monkey the villain.
+You can create a new branch using - git branch <branchName>
+You can also see all the branches in your local repo using the 'git branch'
+command.
+-----------------------------------------------------------------------
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory ((8b11dce...))
+$ git branch "flippedStory"
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory ((8b11dce...))
+$ git branch
+* (HEAD detached at 8b11dce)
+  flippedStory
+  master
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory ((8b11dce...))
+$
+-----------------------------------------------------------------
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory ((8b11dce...))
+$ vim Story.txt
+
+
+
+to  view the file
+
+-------------------------------------
+:qa  
+
+to exit from viewing the file
+
+---------------------------------
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory ((8b11dce...))
+$ git checkout flippedStory
+Switched to branch 'flippedStory'
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (flippedStory)
+$
+
+--------------------------------------------------------
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (flippedStory)
+$ git branch
+* flippedStory
+  master
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (flippedStory)
+$
+
+-------------------------------------------------------------------
+. If you currently press git log, it will show you the commits log for only the current
+branch.
+
+At any point of time, you can abandon this branch and move to the master
+branch using 'git checkout master'. It will take you to the last commit you had
+made in the master branch.
+ Later you can switch to FlippedBranch anytime and continue writing the story
+wherever you have left.
+© 2019 The content of this email is confidential and intended for the recipient specified in message only. It is strictly forbidden to
+share any part of this message with any third party without a wri
+
+---------------------------------------------------------------
+16. You can check the difference between the lines in the HEAD of the two branches
+using - git diff branchA branchB
+HEAD here refers to the latest commit of the two branches.
+Sometimes two branches can work towards the same feature and then later
+they can be merged using git merge command.
+--------------------------------------------------------------------------
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (flippedStory)
+$ git branch
+* flippedStory
+  master
+-------------------------------------------------------------------
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (flippedStory)
+$ git diff master flippedStory
+diff --git a/Story.txt b/Story.txt
+index 22a3f8d..e69de29 100644
+--- a/Story.txt
++++ b/Story.txt
+@@ -1,3 +0,0 @@
+-Once there lived a monkey in a jamun tree by a river. The monkey was alone <96> he had no friends, no family, but he was happy and content. The jamun tree gave him plenty of sweet fruit to eat, and shade from the sun and shelter from the rain.
+-
+-One day a crocodile came swimming up the river and climbed on to the bank to rest under the monkey<92>s tree. <91>Hello,<92> called the monkey, who was a friendly animal. <91>Hello,<92> replied the crocodile, surprised. <91>Do you know where I can get some food?<92> he asked. <91>I haven<92>t had anything to eat all day.
+\ No newline at end of file
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (flippedStory)
+$
+-------------------------------------------------------------------------
+7. Now, let's upload all our commits to a remote repository (also called upstream
+repository).
+We will first need to create an empty Github repository.
+
+open github.com
+Repository name: MonkeyAndCrocodile
+Description :Strory Versioning Using git commands
+
+----------------------------------------------
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (flippedStory)
+$ git remote add origin https://github.com/subhrapattnaik/MonkeyAndCrocodile.git
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (flippedStory)
+$ git push origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 769 bytes | 256.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/subhrapattnaik/MonkeyAndCrocodile.git
+ * [new branch]      master -> master
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (flippedStory)
+$
+
+
+---------------------------------------------------------------------------
+
+Change a file on the remote repo and make a commit.
+
+edit in any file in the git hub url
+Edited "Tortoise made an entry to the story"
+
+---------------------------------------------------------
+click on commit changes buton
+
+-------------------------------------------------------------
+
+We will not be able to make any new pushes to the remote repo since our
+local repo is out of sync. We can use git pull to update our repo with the
+upstream repo.
+
+-------------------------------------------------------------------------
+
+*Note: If there are too many conflicts in the current working directory vs the remote repo,
+you will be asked to make a new commit. Make a new commit and then apply the git push.
+
+--------------------------------------------------------------------------------
+
+Now you can open the working directory to see that the current repo is
+updated with the new name of the character.
+-----------------------------------------------------------------------------------------
+To fork the project:
+Forking creates a duplicate of the repository in your own account where you can work and
+modify the contents of the project.
+
+
+https://github.com/subhrapattnaik/Monkey-Chunky
+
+
+fork this repository
+
+------------------------------------------------------------------------
+
+forking ....creates a copy of the repository in our github
+
+-------------------------------------------------------------
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (flippedStory)
+$ git clone https://github.com/subhrapattnaik/Monkey-Chunky.git
+Cloning into 'Monkey-Chunky'...
+remote: Enumerating objects: 37, done.
+remote: Total 37 (delta 0), reused 0 (delta 0), pack-reused 37
+Unpacking objects: 100% (37/37), 22.67 KiB | 14.00 KiB/s, done.
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (flippedStory)
+$
+
+
+-----------------------------------------------------------------------------
+
+ USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (flippedStory)
+$ ls
+Characters.txt  Monkey-Chunky/  Story.txt
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory (flippedStory)
+$ cd  Monkey-Chunky
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory/Monkey-Chunky (master)
+$
+----------------------------------------------------------------------------
+
+
+Now cd into your forked repo. Let's make some changes to this project.
+ Some example changes you can make are:
+ You can make the input box rounded.
+ You can make the phonic chunk buttons in a horizontal row instead of
+column by changing the flex-directio
+
+-------------------------------------------------------------------------------
+
+open the project in visual code studio
+
+App.js
+
+styles 
+
+for inputbox
+
+  borderRadius:20,
+
+--------------------------------
+also line 62 , add style
+
+<View style={{flexDirection : 'row' ,alignSelf :'center'}}>
+
+-------------------------------------------------------
+
+ Finally, you can stage and commit these changes
+
+
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory/Monkey-Chunky (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   App.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory/Monkey-Chunky (master)
+$ git add  App.js
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory/Monkey-Chunky (master)
+$ git commit -m "Round corners of Input Box"
+[master 9ddf108] Round corners of Input Box
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory/Monkey-Chunky (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 391 bytes | 391.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/subhrapattnaik/Monkey-Chunky.git
+   1e83a07..9ddf108  master -> master
+
+USER@DELL MINGW64 /c/WhiteHatJr2ndModule/PRO-C67/myStory/Monkey-Chunky (master)
+$
+--------------------------------------------------------------------------------------------------------
+Let's see if the new commits are added in the remote forked repo.
+
+
+Open github and refresh the forked repository
+
+----------------------------------------------------------
+
+
+Now your forked repo is different from the original repo.
+6. You can make a pull request on the original repo.
+ This will send a request to the original developer of the project to pull the
+changes you have made into their current project.
+You will have to write a message to tell the developer what change you made.
+The developer can accept the pull request and merge the changes into their
+current project.
+the pull request will remain open till it is merged with the original project or
+closed by the developer.
+Once merged, you will then be added as a contributor to the project
+
+
+-----------------------------------------------------------------------------------
+
+
+
